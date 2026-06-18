@@ -1028,7 +1028,7 @@ function PlatformSection() {
                                         height: '100%'
                                     },
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                        src: "/images/laptop.png",
+                                        src: "/images/phone-platform.png",
                                         alt: "laptop",
                                         fill: true,
                                         style: {
@@ -1037,12 +1037,12 @@ function PlatformSection() {
                                         }
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/landing/sections/problems-section/PlatformSection.tsx",
-                                        lineNumber: 137,
+                                        lineNumber: 149,
                                         columnNumber: 21
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/landing/sections/problems-section/PlatformSection.tsx",
-                                    lineNumber: 129,
+                                    lineNumber: 141,
                                     columnNumber: 19
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -1057,13 +1057,13 @@ function PlatformSection() {
                                                 card.title,
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                     fileName: "[project]/src/components/landing/sections/problems-section/PlatformSection.tsx",
-                                                    lineNumber: 150,
+                                                    lineNumber: 162,
                                                     columnNumber: 31
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/landing/sections/problems-section/PlatformSection.tsx",
-                                            lineNumber: 149,
+                                            lineNumber: 161,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -1075,13 +1075,13 @@ function PlatformSection() {
                                             children: card.description
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/landing/sections/problems-section/PlatformSection.tsx",
-                                            lineNumber: 152,
+                                            lineNumber: 164,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/landing/sections/problems-section/PlatformSection.tsx",
-                                    lineNumber: 148,
+                                    lineNumber: 160,
                                     columnNumber: 15
                                 }, this)
                             ]
@@ -1117,12 +1117,12 @@ function PlatformSection() {
                         size: "md"
                     }, void 0, false, {
                         fileName: "[project]/src/components/landing/sections/problems-section/PlatformSection.tsx",
-                        lineNumber: 174,
+                        lineNumber: 186,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/landing/sections/problems-section/PlatformSection.tsx",
-                    lineNumber: 161,
+                    lineNumber: 173,
                     columnNumber: 9
                 }, this)
             ]

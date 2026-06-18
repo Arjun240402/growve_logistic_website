@@ -3409,11 +3409,13 @@ const PLATFORM = {
     cards: [
         {
             title: 'Connect marketplaces & stores in minutes.',
+            img: '/images/phone-platform.png',
             description: 'Automatically sync orders, inventory updates, and shipment activity across all connected sales channels.',
             preview: 'mobile'
         },
         {
             title: 'Manage every order from one workspace.',
+            img: '/images/laptop.png',
             description: 'Create shipments, monitor statuses, coordinate fulfillment, and keep operations moving from a single dashboard.',
             preview: 'laptop'
         }

@@ -1,12 +1,12 @@
-import Box from '@mui/material/Box'
-import Typography from '@mui/material/Typography'
-import { Icon } from '@iconify/react'
-import SectionHeading from '../../ui/SectionHeading'
-import { PLATFORM } from '../../data/landing.data'
-import { SECTION_IDS } from '@/utils/constant'
-import StoreIntegrationShowcase from './StoreIntegrationShowcase'
-import LaptopMockup from './LaptopMockup'
-import Image from 'next/image'
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+import { Icon } from "@iconify/react";
+import SectionHeading from "../../ui/SectionHeading";
+import { PLATFORM } from "../../data/landing.data";
+import { SECTION_IDS } from "@/utils/constant";
+import StoreIntegrationShowcase from "./StoreIntegrationShowcase";
+import LaptopMockup from "./LaptopMockup";
+import Image from "next/image";
 
 // function LaptopMockup() {
 //   return (
@@ -93,28 +93,32 @@ export default function PlatformSection() {
   return (
     <Box
       id={SECTION_IDS.PLATFORM}
-      sx={{ backgroundColor: 'var(--surface-dark)', color: 'var(--text-on-dark)', py: { xs: 8, md: 12 } }}
+      sx={{
+        backgroundColor: "var(--surface-dark)",
+        color: "var(--text-on-dark)",
+        py: { xs: 8, md: 12 },
+      }}
     >
-      <Box className='landing-container'>
+      <Box className="landing-container">
         <SectionHeading
           eyebrow={PLATFORM.eyebrow}
           title={PLATFORM.titleLeading}
           accent={PLATFORM.titleAccent}
           subtitle={PLATFORM.subtitle}
-          variant='dark'
-          size='md'
+          variant="dark"
+          size="md"
         />
 
         <Box
           sx={{
             mt: { xs: 5, md: 7 },
-            display: 'grid',
-            gridTemplateColumns: { xs: '1fr', md: 'repeat(2, 1fr)' },
-            alignItems: 'stretch',
-            gap:4
+            display: "grid",
+            gridTemplateColumns: { xs: "1fr", md: "repeat(2, 1fr)" },
+            alignItems: "stretch",
+            gap: 4,
           }}
         >
-          {PLATFORM.cards.map((card, i) => (
+          {/* {PLATFORM.cards.map((card, i) => (
             <Box key={card.title} sx={{
               width: '100%',
               background: '#111',
@@ -124,7 +128,25 @@ export default function PlatformSection() {
               flexDirection: 'column',
             }}>
               {i === 0 ?
-                <StoreIntegrationShowcase /> :
+                // <StoreIntegrationShowcase />
+                <Box 
+                sx={{
+                      position: 'relative',
+                      width: '100%',
+                      height: '100%',
+                    }}
+                >
+                  <Image
+                      src="/images/phone-platform.png"
+                      alt="laptop"
+                      fill
+                      style={{
+                        objectFit: 'cover', // or 'contain'
+                        borderRadius: '15px'
+                      }} 
+                /> 
+                  </Box>
+                :
                 (
                   <Box
                     sx={{
@@ -135,7 +157,7 @@ export default function PlatformSection() {
                     }}
                   >
                     <Image
-                      src="/images/laptop.png"
+                      src="/images/phone-platform.png"
                       alt="laptop"
                       fill
                       style={{
@@ -154,6 +176,56 @@ export default function PlatformSection() {
                 </Typography>
               </Box>
             </Box>
+          ))} */}
+          {PLATFORM.cards.map((card, i) => (
+            <Box
+              key={card.title}
+              sx={{
+                width: "100%",
+                background: "#111",
+                borderRadius: 3,
+                overflow: "hidden",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              <Box
+                sx={{
+                  position: "relative",
+                  width: "100%",
+                }}
+              >
+                <img
+                  src={card.img}
+                  alt={card.title}
+                  style={{
+                    // width: "100%",
+                    // height: "100%",
+                    objectFit: "fill",
+                    borderRadius: "15px",
+                  }}
+                />
+              </Box>
+
+              <Box className="p-2">
+                <Typography
+                  variant="Heading/H4-Bold"
+                  sx={{ color: "var(--text-on-dark)" }}
+                >
+                  {card.title}
+                </Typography>
+
+                <Typography
+                  className="text-[.75rem]! max-w-[500px]"
+                  sx={{
+                    color: "var(--text-on-dark-muted)",
+                    lineHeight: 1.6,
+                  }}
+                >
+                  {card.description}
+                </Typography>
+              </Box>
+            </Box>
           ))}
         </Box>
 
@@ -163,12 +235,11 @@ export default function PlatformSection() {
             mt: 8,
             px: { xs: 3, md: 3.5 },
             py: 6,
-            borderRadius: '14px',
-            background:
-              'linear-gradient(180deg, #FDEAB7 0%, #FFFBF0 100%)',
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
+            borderRadius: "14px",
+            background: "linear-gradient(180deg, #FDEAB7 0%, #FFFBF0 100%)",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
           }}
         >
           <SectionHeading
@@ -176,10 +247,10 @@ export default function PlatformSection() {
             title={PLATFORM.callout.titleLeading}
             accent={PLATFORM.callout.titleAccent}
             subtitle={PLATFORM.callout.subtitle}
-            size='md'
+            size="md"
           />
         </Box>
       </Box>
     </Box>
-  )
+  );
 }
